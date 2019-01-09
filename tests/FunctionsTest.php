@@ -81,7 +81,7 @@ class FunctionsTest extends TestCase
      */
     public function testUsesPhpCompilationOfJsonIfPossible()
     {
-        $soughtData = ['foo' => 'bar'];
+        $soughtData = ['foo' => 'bar2'];
         $jsonPath = sys_get_temp_dir() . '/some-file-name-' . time() . '.json';
 
         file_put_contents($jsonPath, json_encode($soughtData), LOCK_EX);
